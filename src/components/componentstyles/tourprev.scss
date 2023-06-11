@@ -1,0 +1,44 @@
+@import '../../variables';
+
+.scndsec{
+    .scndsec-con{
+        background-color: $maincolour;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        .statclude{
+            position: relative;
+            height: 75px;
+            width: 3px;
+            background-color: $secondarycolor;
+            display: inline-block;
+            left: 80%;        
+        }
+        .topcon{
+            p{
+                text-transform: uppercase;
+                font-size: smaller;
+                letter-spacing: 3px;
+                color: $primarytxtcolor;
+                font-size: 1.15rem;
+            }
+            h2{
+                text-transform: capitalize;
+                // font-weight: 400;
+                letter-spacing: 3px;
+                padding: 20px;
+                font-size: 2rem;
+                color: $secondarycolor;
+            }
+        }
+    }
+}
+.numhr{
+    width: 60%;
+    background-color: rgb(97, 97, 97);
+    height: 2px;
+    border: 0;
+    border-radius: 2px;
+    margin: auto;
+}

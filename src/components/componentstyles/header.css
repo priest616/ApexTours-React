@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.bigdot {
+  font-family: "Times New Roman", Times, serif;
+  color: green;
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1rem;
+  position: relative;
+}
+
+header {
+  display: flex;
+  box-shadow: 0px 1px 10px -5px black;
+  width: 100%;
+  position: absolute;
+  align-items: center;
+  background-color: rgba(68, 68, 68, 0.8156862745);
+  top: 0;
+}
+header .apexttl {
+  margin-right: auto;
+  padding: 10px;
+  display: flex;
+}
+header nav {
+  height: 40px;
+  align-self: center;
+}
+header nav ul {
+  display: flex;
+  background: 0 0% 100%/0.1;
+  background-color: rgb(0, 0, 0);
+}
+header nav ul li {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+
+.mobile-nav img {
+  height: 100%;
+  width: 100%;
+}
+
+.mobilelst[data-visible=false] {
+  transform: translateX(0%);
+}
+
+@media (max-width: 950px) {
+  header div h1 {
+    color: black;
+  }
+  header nav ul {
+    color: white;
+    position: fixed;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: min(20vh, 70px) 50px;
+    align-content: flex-start;
+    transform: translateX(100%);
+    transition: 350ms ease-out;
+    z-index: 111;
+  }
+  .mobile-nav {
+    transition: 200ms ease-in;
+    display: block;
+    position: absolute;
+    z-index: 666;
+    width: 30px;
+    aspect-ratio: 1;
+    right: 60%;
+  }
+  .mobile-nav[aria-expanded=true] {
+    right: 20px;
+    width: 20px;
+  }
+}
+.navcomm {
+  padding: 0;
+  flex-direction: column;
+  margin-top: auto;
+}
+.navcomm .findus {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  gap: 15px;
+  margin: 0 auto;
+}
+.navcomm .findus div {
+  height: 35px;
+  width: 35px;
+  background-size: 100% 100%;
+  background-color: green;
+}
+
+.navcomment p {
+  text-align: justify;
+  color: rgba(68, 68, 68, 0.8156862745);
+}
+.navcomment p span {
+  color: rgb(0, 73, 0);
+  text-transform: capitalize;
+}
+
+.fstsec-con {
+  height: 100%;
+}
+
+.fstsec {
+  height: max(100vh, 650px);
+  background-image: url("../img/IMG-20221023-WA0061.jpg");
+  background-size: 100% 100%;
+}
+.fstsec div {
+  position: relative;
+}
+.fstsec div .div1 {
+  padding-top: 80px;
+}
+.fstsec div .div1 h4 {
+  text-align: center;
+  padding: 70px;
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+  color: black;
+}
+.fstsec div .div2 {
+  height: 100px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.fstsec div .div2 h2 {
+  text-align: center;
+  align-self: center;
+  width: 60%;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 1.65rem;
+}
+.fstsec div .div3 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fstsec div .div3 button {
+  font-family: monospace;
+  text-align: center;
+  align-self: center;
+  width: 70%;
+  margin: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  height: 50px;
+  border-radius: 0;
+  border: 2px solid green;
+  background: transparent;
+  color: white;
+  font-weight: 100;
+  font-size: small;
+}
+.fstsec div .div3 button:hover {
+  transition: 400ms ease-in;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.fstsec div .div3 button:focus {
+  transition: 400ms ease-in;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border: transparent;
+}
+
+.fstsec-con {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.conclude {
+  position: relative;
+  height: 75px;
+  width: 3px;
+  background-color: green;
+  display: inline-block;
+  left: 80%;
+}/*# sourceMappingURL=header.css.map */

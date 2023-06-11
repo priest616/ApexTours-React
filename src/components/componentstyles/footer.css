@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.foot {
+  background: url("../img/imageG.jpeg");
+}
+.foot .flag {
+  position: relative;
+}
+.foot .flag .the-flag {
+  position: absolute;
+  height: 100px;
+  width: 3px;
+  background: green;
+  left: 50%;
+  top: -50px;
+}
+.foot .content-con .head-con {
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.foot .content-con .head-con p {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: green;
+  padding-top: 100px;
+  font-size: 1.1rem;
+}
+.foot .content-con .head-con h2 {
+  margin: auto;
+  width: min(60%, 400px);
+  letter-spacing: 3px;
+  color: white;
+  padding-top: 10px;
+  font-size: 1.65rem;
+  padding-bottom: 50px;
+}
+.foot .form-con {
+  padding-top: 50px;
+  background: rgba(0, 0, 0, 0.45);
+}
+.foot .form-con form {
+  display: flex;
+  flex-direction: column;
+}
+.foot .form-con form input {
+  height: 50px;
+  color: white;
+}
+.foot .form-con form textarea {
+  color: white;
+}
+.foot .form-con form input, .foot .form-con form textarea {
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-top: 60px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgb(97, 97, 97);
+  transition: 200ms ease-in;
+}
+.foot .form-con form input:focus, .foot .form-con form textarea:focus {
+  outline: none;
+  border-bottom: 1px solid green;
+  transition: 200ms ease-in;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.foot .form-con form button {
+  display: block;
+  width: 40%;
+  margin: auto;
+  margin-top: 60px;
+  background: green;
+  padding: 15px;
+  border: 0;
+  border-radius: 0;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.notif {
+  background-color: black;
+  padding-bottom: 50px;
+}
+
+.notif-head {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+.notif-head p {
+  letter-spacing: 3px;
+  color: rgb(97, 97, 97);
+  padding: 20px;
+  font-size: 1.1rem;
+}
+.notif-head h2 {
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  padding: 20px;
+  font-size: 1.65rem;
+  color: green;
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  border-top: 2px solid green;
+}
+footer p {
+  text-align: center;
+  align-self: center;
+  font-weight: 100;
+}
+
+.finds {
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}
+.finds .find-i {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  margin: auto;
+  gap: 5px;
+}
+.finds .find-i div {
+  height: 25px;
+  width: 25px;
+}
+.finds .find {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+.finds .find p {
+  letter-spacing: 3px;
+  color: rgb(97, 97, 97);
+  padding: 20px;
+  font-size: 1.1rem;
+}
+.finds .find h4 {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: green;
+  font-size: 1.65rem;
+}
+
+.p-special {
+  letter-spacing: 0 !important;
+}
+
+.owners-pam {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.owners-pam .owners-pam-con {
+  width: 200px;
+  height: 250px;
+  white-space: nowrap;
+  overflow-y: auto;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+}
+.owners-pam .owners-pam-con::-webkit-scrollbar {
+  display: none;
+}
+.owners-pam .owners-pam-con .owners-frem {
+  display: inline-block;
+  width: 130px;
+}
+.owners-pam .owners-pam-con .owners-frem .owne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 250px;
+}
+.owners-pam .owners-pam-con .owners-frem .owne img {
+  width: 120px;
+  height: 120px;
+  border-radius: 25%;
+}
+.owners-pam .owners-pam-con .owners-frem .owne p span {
+  color: green;
+}/*# sourceMappingURL=footer.css.map */
